@@ -4,4 +4,4 @@ metadata:
   creationTimestamp: null
   name: helloservice-primary
 spec:
-  host: helloservice-primary.pod-tato-head-hardening.svc.cluster.local
+  host: helloservice-primary.sample-app-hardening.svc.cluster.local

@@ -8,12 +8,12 @@ spec:
   - public-gateway.istio-system
   - mesh
   hosts:
-  - helloservice.pod-tato-head-hardening.20.204.253.86.nip.io
+  - helloservice.sample-app-hardening.20.204.253.86.nip.io
   - helloservice
   http:
   - route:
     - destination:
-        host: helloservice-canary.pod-tato-head-hardening.svc.cluster.local
+        host: helloservice-canary.sample-app-hardening.svc.cluster.local
       weight: 100
     - destination:
-        host: helloservice-primary.pod-tato-head-hardening.svc.cluster.local
+        host: helloservice-primary.sample-app-hardening.svc.cluster.local

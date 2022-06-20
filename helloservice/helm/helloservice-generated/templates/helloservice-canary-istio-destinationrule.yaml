@@ -4,4 +4,4 @@ metadata:
   creationTimestamp: null
   name: helloservice-canary
 spec:
-  host: helloservice-canary.pod-tato-head-hardening.svc.cluster.local
+  host: helloservice-canary.sample-app-hardening.svc.cluster.local

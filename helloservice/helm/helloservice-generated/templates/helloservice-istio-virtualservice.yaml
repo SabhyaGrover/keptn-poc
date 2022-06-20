@@ -8,12 +8,12 @@ spec:
   - public-gateway.istio-system
   - mesh
   hosts:
-  - helloservice.pod-tato-head-production.20.204.253.86.nip.io
+  - helloservice.sample-app-production.20.204.253.86.nip.io
   - helloservice
   http:
   - route:
     - destination:
-        host: helloservice-canary.pod-tato-head-production.svc.cluster.local
+        host: helloservice-canary.sample-app-production.svc.cluster.local
       weight: 100
     - destination:
-        host: helloservice-primary.pod-tato-head-production.svc.cluster.local
+        host: helloservice-primary.sample-app-production.svc.cluster.local
